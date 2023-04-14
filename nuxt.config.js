@@ -47,6 +47,10 @@ export default {
     '@nuxtjs/axios',
   ],
 
+  axios: {
+  baseURL: 'https://randomuser.me/api'
+},
+
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],

@@ -34,7 +34,7 @@ export default {
     }
   },
   async mounted() {
-    this.users = await userService.fetchUsers();
+    this.users = await userService.getUsers();
   },
   methods: {
     handleSearch(query) {
