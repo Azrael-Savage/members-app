@@ -1,11 +1,10 @@
-<!-- pages/index.vue -->
 <template>
   <div>
     <h1>Members</h1>
     <SearchBar @search="handleSearch" />
-    <div>
-      <MemberCard v-for="user in filteredUsers" :key="user.login.uuid" :user="user" />
-    </div>
+    <v-row>
+      <member-card v-for="user in filteredUsers" :key="user.login.uuid" :user="user" />
+    </v-row>
   </div>
 </template>
 
@@ -17,21 +16,21 @@ import SearchBar from '@/components/SearchBar';
 export default {
   components: {
     MemberCard,
-    SearchBar
+    SearchBar,
   },
   data() {
     return {
       users: [],
-      searchQuery: ''
+      searchQuery: '',
     };
   },
   computed: {
     filteredUsers() {
-      return this.users.filter(user => {
+      return this.users.filter((user) => {
         const fullName = `${user.name.first} ${user.name.last}`.toLowerCase();
         return fullName.includes(this.searchQuery.toLowerCase());
       });
-    }
+    },
   },
   async mounted() {
     this.users = await userService.getUsers();
@@ -39,7 +38,7 @@ export default {
   methods: {
     handleSearch(query) {
       this.searchQuery = query;
-    }
-  }
+    },
+  },
 };
 </script>

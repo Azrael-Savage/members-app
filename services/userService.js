@@ -5,7 +5,7 @@ const API_URL = 'https://randomuser.me/api/';
 export default {
   async getUsers() {
     try {
-      const response = await axios.get(`${API_URL}?results=50`);
+      const response = await axios.get(`${API_URL}?results=56`);
       return response.data.results;
     } catch (error) {
       console.error('Error fetching users:', error.response || error);

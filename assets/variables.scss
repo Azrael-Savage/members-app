@@ -2,3 +2,155 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
+/* Colors */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #f1c40f;
+  --background-color: #f7f7f7;
+  --text-color: #333333;
+  --border-color: #dddddd;
+}
+
+/* Button styles */
+.v-btn {
+  text-transform: none;
+  font-weight: 400;
+  color: var(--text-color);
+  border-radius: 5px;
+}
+
+.v-btn--text {
+  color: var(--primary-color);
+}
+
+.v-btn--outlined {
+  border: 1px solid var(--border-color);
+  color: var(--primary-color);
+}
+
+.v-btn--rounded {
+  border-radius: 25px;
+}
+
+.v-btn--fab {
+  border-radius: 50%;
+}
+
+.v-btn--depressed {
+  box-shadow: none;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+}
+
+/* Card styles */
+.v-card {
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.v-card__title {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.v-card__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.v-card__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+/* Form styles */
+.v-input {
+  font-size: 16px;
+  color: var(--text-color);
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+}
+
+.v-input__control {
+  height: 50px;
+  border-radius: 5px;
+}
+
+.v-input__icon {
+  color: var(--text-color);
+}
+
+.v-input--dense {
+  height: 40px;
+}
+
+.v-input--textarea {
+  resize: none;
+  height: auto;
+}
+
+/* Header styles */
+.v-toolbar {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.v-toolbar__title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* Navigation drawer styles */
+.v-navigation-drawer {
+  background-color: var(--background-color);
+}
+
+.v-list-item {
+  color: var(--text-color);
+}
+
+/* Pagination styles */
+.v-pagination__item {
+  border-radius: 50%;
+}
+
+/* Table styles */
+.v-data-table {
+  border-collapse: collapse;
+}
+
+.v-data-table__wrapper {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.v-data-table__wrapper > table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.v-data-table__wrapper th,
+.v-data-table__wrapper td {
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.v-data-table__wrapper th {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.v-data-table__wrapper td {
+  background-color: var(--background-color);
+}
+
+.v-data-table__pagination {
+  margin-top: 20px;
+}
