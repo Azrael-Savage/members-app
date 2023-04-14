@@ -15,7 +15,7 @@ export default {
 
   async getUserById(id) {
     try {
-      const response = await axios.get(`${API_URL}?id=${id}`);
+      const response = await axios.get(`${API_URL}?seed=${id}`);
       return response.data.results[0];
     } catch (error) {
       console.error('Error fetching user by ID:', error);

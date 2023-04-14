@@ -3,7 +3,7 @@
     <h1>Members</h1>
     <SearchBar @search="handleSearch" />
     <v-row>
-      <member-card v-for="user in filteredUsers" :key="user.login.uuid" :user="user" />
+      <member-card v-for="user in filteredUsers" :key="user.login.uuid" :user="user" :user-id="user.login.uuid" />
     </v-row>
   </div>
 </template>
