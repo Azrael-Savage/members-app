@@ -8,7 +8,7 @@
         <p>Age: {{ user.dob.age }}</p>
       </v-card-text>
       <v-card-actions>
-        <v-btn color="primary" text :to="`/profile/${user.login.uuid}`">View Profile</v-btn>
+        <v-btn color="primary" text :to="{ name: 'profile-id', params: { id: user.login.uuid } }">View Profile</v-btn>
       </v-card-actions>
     </v-card>
   </v-col>

@@ -3,7 +3,13 @@
     <h1>Members</h1>
     <SearchBar @search="handleSearch" />
     <v-row>
-      <member-card v-for="user in filteredUsers" :key="user.login.uuid" :user="user" :user-id="user.login.uuid" />
+      <member-card
+        v-for="user in filteredUsers"
+        :key="user.login.uuid"
+        :user="user"
+        :user-id="user.login.uuid"
+        @view-profile="navigateToProfile"
+      />
     </v-row>
   </div>
 </template>
@@ -38,6 +44,9 @@ export default {
   methods: {
     handleSearch(query) {
       this.searchQuery = query;
+    },
+    navigateToProfile(userId) {
+      this.$router.push({ name: 'profile-id', params: { id: userId } });
     },
   },
 };

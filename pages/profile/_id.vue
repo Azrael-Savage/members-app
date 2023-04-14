@@ -5,7 +5,10 @@
       <img :src="user.picture.large" alt="Profile picture" />
       <h2>{{ user.name.first }} {{ user.name.last }}</h2>
       <p>{{ user.location.street.number }} {{ user.location.street.name }}</p>
-      <p>{{ user.location.city }}, {{ user.location.state }} {{ user.location.postcode }}</p>
+      <p>
+        {{ user.location.city }}, {{ user.location.state }}
+        {{ user.location.postcode }}
+      </p>
       <p>Email: {{ user.email }}</p>
       <p>Phone: {{ user.phone }}</p>
       <p>Date of Birth: {{ formattedDateOfBirth }}</p>
@@ -17,7 +20,7 @@
 </template>
 
 <script>
-import userService from '@/services/userService';
+import userService from "@/services/userService";
 
 export default {
   data() {
@@ -29,17 +32,17 @@ export default {
     formattedDateOfBirth() {
       if (this.user) {
         const date = new Date(this.user.dob.date);
-        const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        return date.toLocaleDateString('en-US', options);
+        const options = { year: "numeric", month: "long", day: "numeric" };
+        return date.toLocaleDateString("en-US", options);
       }
-      return '';
+      return "";
     },
   },
   async mounted() {
     const userId = this.$route.params.id;
+    console.log("User ID:", userId);
     this.user = await userService.getUserById(userId);
+    console.log("Fetched user:", this.user);
   },
 };
 </script>
-
-
