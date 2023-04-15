@@ -1,72 +1,29 @@
+# Member-App
 
-```
-members-app
-├─ .babelrc
-├─ .editorconfig
-├─ .git
-│  ├─ config
-│  ├─ description
-│  ├─ HEAD
-│  ├─ hooks
-│  │  ├─ applypatch-msg.sample
-│  │  ├─ commit-msg.sample
-│  │  ├─ fsmonitor-watchman.sample
-│  │  ├─ post-update.sample
-│  │  ├─ pre-applypatch.sample
-│  │  ├─ pre-commit.sample
-│  │  ├─ pre-merge-commit.sample
-│  │  ├─ pre-push.sample
-│  │  ├─ pre-rebase.sample
-│  │  ├─ pre-receive.sample
-│  │  ├─ prepare-commit-msg.sample
-│  │  ├─ push-to-checkout.sample
-│  │  └─ update.sample
-│  ├─ index
-│  ├─ info
-│  │  └─ exclude
-│  ├─ objects
-│  │  ├─ info
-│  │  └─ pack
-│  │     ├─ pack-6bcde0cd4ef9d837f5a0b83459aea05409ded868.idx
-│  │     └─ pack-6bcde0cd4ef9d837f5a0b83459aea05409ded868.pack
-│  ├─ packed-refs
-│  └─ refs
-│     ├─ heads
-│     │  └─ master
-│     ├─ remotes
-│     │  └─ origin
-│     │     └─ HEAD
-│     └─ tags
-├─ .github
-│  └─ workflows
-│     └─ ci.yml
-├─ .gitignore
-├─ assets
-│  └─ variables.scss
-├─ components
-│  ├─ MemberCard.Vue
-│  └─ SearchBar.vue
-├─ jest.config.js
-├─ layouts
-│  ├─ default.vue
-│  └─ error.vue
-├─ nuxt.config.js
-├─ package-lock.json
-├─ package.json
-├─ pages
-│  ├─ index.vue
-│  └─ profile
-│     └─ _id.vue
-├─ README.me
-├─ services
-│  └─ userService.js
-├─ static
-│  ├─ favicon.ico
-│  ├─ v.png
-│  └─ vuetify-logo.svg
-├─ store
-│  └─ README.md
-└─ test
-   └─ NuxtLogo.spec.js
+## Description
+Random Member(s) App
 
-```
+## Table of Contents
+- [Member-App](#member-app)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Questions](#questions)
+
+## Installation
+Clone repo to local machine
+
+## Usage
+install dependencies usin npm install and then run the app with npm run dev and go to localhost/3000
+
+## License
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This project is covered under the MIT license.
+
+
+## Questions
+For additional questions, you can reach me on GitHub at [Azrael-Savage](https://github.com/Azrael-Savage)
+or via email at Kingfamilylimited@gmail.com.
