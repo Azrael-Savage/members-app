@@ -16,7 +16,7 @@ Random Member(s) App
 Clone repo to local machine
 
 ## Usage
-install dependencies usin npm install and then run the app with npm run dev and go to localhost/3000
+install dependencies usin npm install and then run the app with npm run dev and go to localhost/3000 or launch from gh-pages
 
 ## License
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
