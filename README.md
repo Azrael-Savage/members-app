@@ -16,7 +16,7 @@ Random Member(s) App
 Clone repo to local machine
 
 ## Usage
-install dependencies usin npm install and then run the app with npm run dev and go to localhost/3000 or launch from gh-pages
+install dependencies usin npm install and then run the app with npm run dev and go to localhost/3000 or go to https://643a1789eb3dc23c66598bc1--dazzling-palmier-1b0b0c.netlify.app/
 
 ## License
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
