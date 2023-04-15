@@ -39,6 +39,9 @@ export default {
   border: none;
   border-bottom: 2px solid #2196f3;
   transition: all 0.3s ease-in-out;
+  color: #fff;
+  border-style: dashed;
+  border-color: #ff9800;
 }
 
 .search-bar input:focus {

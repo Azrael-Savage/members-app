@@ -1,7 +1,7 @@
 <template>
-  <v-col cols="12" sm="6" md="4" lg="3">
+  <v-col cols="12" sm="4" md="3" lg="2">
     <v-card class="member-card" elevation="2">
-      <v-img :src="user.picture.thumbnail" alt="User thumbnail" height="200" contain></v-img>
+      <v-img :src="user.picture.thumbnail" alt="User thumbnail" height="150" contain></v-img>
       <v-card-title class="text-center">{{ user.name.first }} {{ user.name.last }}</v-card-title>
       <v-card-subtitle class="text-center">{{ user.location.city }}, {{ user.location.country }}</v-card-subtitle>
       <v-card-text>
@@ -28,6 +28,16 @@ export default {
 <style scoped>
 .member-card {
   margin-bottom: 20px;
+  border-style: groove;
+  border-color: aliceblue;
+}
+
+.member-card .v-card__title {
+  font-size: 1rem;
+}
+
+.member-card .v-card__subtitle {
+  font-size: 0.8rem;
 }
 
 /* animation */

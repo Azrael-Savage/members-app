@@ -8,7 +8,7 @@ export default {
   async getUsers() {
     if (!usersCache) {
       try {
-        const response = await axios.get(`${API_URL}?results=56`);
+        const response = await axios.get(`${API_URL}?results=54`);
         usersCache = response.data.results;
       } catch (error) {
         console.error('Error fetching users:', error.response || error);

@@ -51,3 +51,10 @@ export default {
   },
 };
 </script>
+<style scoped>
+h1{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+</style>
